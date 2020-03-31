@@ -1,0 +1,41 @@
+.App {
+  /* text-align: center; */
+}
+
+/* #rackImage{
+	visibility: hidden;
+  position: absolute;
+  display: none;
+} */
+.image-container{
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  position: sticky;
+  top: 0;
+}
+.product-box{
+  position: absolute;
+  border: 3px solid #0000ff;
+  z-index: 2;
+}
+.product-box.active,.product-box:hover{
+  border-color: #ffff00;
+}
+.name-box{
+  display: block;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: all ease 0.5s;
+  color:#ffffff;
+}
+.product-box:hover{
+  z-index: 3;
+}
+.product-box:hover .name-box{
+  opacity: 1;
+}
+.table-container tr{
+  cursor: pointer;  
+}
